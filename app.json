@@ -3,6 +3,13 @@
     "name": "react-native-proj-2",
     "slug": "react-native-proj-2",
     "version": "1.0.0",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "userInterfaceStyle": "automatic"
+    },
+    "android": {
+      "userInterfaceStyle": "automatic"
+    },
     "assetBundlePatterns": [
       "**/*"
     ]

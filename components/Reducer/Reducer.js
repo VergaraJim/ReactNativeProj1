@@ -1,18 +1,23 @@
 import { createStore } from "redux";
-import { TOGGLE_SIDEMENU } from "./Constants";
+import { PAGE_HOME, SET_PAGE, TOGGLE_SIDEMENU } from "./Constants";
 
 const initialState = {
-    isSideMenuOpen: false
+    isSideMenuOpen: false,
+    currentPage: PAGE_HOME,
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case TOGGLE_SIDEMENU:
-        console.log(state);
       return {
         ...state,
         isSideMenuOpen: !state.isSideMenuOpen,
       };
+    case SET_PAGE:
+      return {
+        ...state,
+        currentPage: action.page,
+      }
     default:
       return state;
   }
