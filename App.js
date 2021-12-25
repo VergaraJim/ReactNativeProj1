@@ -37,6 +37,7 @@ function MainContainer(props){
 
   return (
       <View style={styles.container}>
+        <StatusBar hidden/>
         <SafeAreaView>
           {page}
         </SafeAreaView>
