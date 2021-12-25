@@ -1,0 +1,2 @@
+
+export const TOGGLE_SIDEMENU = 'APP/TOGGLE_SIDEMENU'
